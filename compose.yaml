@@ -25,6 +25,7 @@ services:
     container_name: eticket_be
     environment:
       DATABASE_URL: ${DATABASE_URL}
+      SECRET_KEY: ${SECRET_KEY}
     ports:
       - "8000:8000"
     depends_on:
